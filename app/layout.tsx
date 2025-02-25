@@ -24,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="cmyk" lang="en">
+    <html className="bg-gray-100 text-l" data-theme="white" lang="en">
       <body
          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-3xl">
           <Navbar/>
           {children}
           </div>
