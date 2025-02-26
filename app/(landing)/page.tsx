@@ -1,4 +1,10 @@
 import Link from "next/link";
+import SocialLinks from "@/components/socialLinks";
+import githubIcon from "@/components/Icons/githubIcon";
+import LinkedInIcon from "@/components/Icons/linkedinIcon";
+
+
+const Icons = [githubIcon, LinkedInIcon, ]
 
 export default function Home() {
   return (
@@ -6,8 +12,8 @@ export default function Home() {
       <div className=" flex md:flex-row flex-col gap-8  ">
 
         {/* Name Card */}
-        <div className="card bg-base-100 w-full rounded-xl  ">
-          <div className="max-w-md">
+        <div className="card bg-base-100 w-full rounded-xl">
+          <div className="">
             <div className="card-body ">
               <h2 className="card-title">Hi, I'm Agamjot 👋</h2>
               <p>Current Student and Software Developer @ SJSU | Passionate About Web Development and AI</p>
@@ -18,12 +24,15 @@ export default function Home() {
                   </svg>
                 </Link>
                 </div>
+                
             </div>
           </div>
         </div>
 
 
         {/* Socials Card */}
+        <SocialLinks allIcons={Icons}/>
+        
         
       </div>
     </div>
