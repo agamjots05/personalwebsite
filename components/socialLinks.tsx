@@ -9,10 +9,10 @@ export default function SocialLinks({ allIcons }: SocialLinksProps) {
     <div className="card bg-base-100 rounded-xl">
       <div className="">
         <div className="card-body">
-          <p className="pb-3 card-title text-gray-600 text-base">
+          <p className="pb-3 card-title text-gray-500 text-base">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
+              viewBox="0 0 20 20"  
               fill="currentColor"
               className="size-5"
             >
@@ -25,8 +25,8 @@ export default function SocialLinks({ allIcons }: SocialLinksProps) {
           {/* Map through the icons and render them */}
           <div className="flex space-x-4">
           {allIcons?.map((IconComponent, index) => (
-            <div key={index} className="flex flex-wrap items-center  justify-center">
-                <IconComponent/> {/* Adjust icon size and color */}
+            <div key={index} className="flex flex-wrap items-center justify-center duration-300 ease-in-out hover:scale-110">
+                <IconComponent/> 
             </div>
             ))}
 

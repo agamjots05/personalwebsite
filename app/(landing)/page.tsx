@@ -2,12 +2,14 @@ import Link from "next/link";
 import SocialLinks from "@/components/socialLinks";
 import githubIcon from "@/components/Icons/githubIcon";
 import LinkedInIcon from "@/components/Icons/linkedinIcon";
+import WorkSection from "@/components/worksection";
 
 
-const Icons = [githubIcon, LinkedInIcon, ]
+const Icons = [LinkedInIcon,githubIcon ]
 
 export default function Home() {
   return (
+    <>
     <div className="pt-20 flex">
       <div className=" flex md:flex-row flex-col gap-8  ">
 
@@ -29,13 +31,18 @@ export default function Home() {
           </div>
         </div>
 
-
         {/* Socials Card */}
         <SocialLinks allIcons={Icons}/>
         
-        
       </div>
+
+      
     </div>
+    <WorkSection></WorkSection>
+    </>
+    
         
   );
 }
+
+
