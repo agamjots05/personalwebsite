@@ -36,10 +36,10 @@
   export default function WorkSection() {
     return (
       <div className="pt-12">
-        <h2 className="pl-3 uppercase font-bold mb-6">Work</h2>
+        <h2 className="pl-3 uppercase font-bold mb-6">Experience</h2>
 
-        <div className="bg-white rounded-3xl p-8 shadow-sm">
-          <div className="flex items-center gap-2 text-gray-500 mb-8">
+        <div className="bg-white rounded-3xl p-8">
+          <div className="flex gap-2 text-gray-500 mb-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -99,7 +99,7 @@
           <div className="flex justify-end mt-6">
             <Link
               href="/experience"
-              className="bg-black text-white px-6 py-3 rounded-full inline-flex items-center font-medium"
+              className="bg-black text-white px-6 py-3 rounded-full duration-300 ease-in-out hover:scale-105  inline-flex items-center font-medium"
             >
               VIEW ALL 
             </Link>
